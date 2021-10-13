@@ -38,18 +38,18 @@ namespace LibraryHyrule
             new List<Item> { Item.spear});
         public static Room center = new Room("Once again like the rooms before, just absolutely cover with bodies. *Rattle nosies- Darker than normal, especially in the center, \n\n" +
             "a HUGE DARK FIGURE APPEARS\n\n" + 
-            "You can GO START\n",
+            "You can GO START or ATTACK\n",
             new List<string> { "start", "back" },
             new List<Item> { }
             );
         public static Room up = new Room("Surprisingly organized, the area seems to be someones room. In the corner of your eye you see a bow.\n\n" +
-            "You can GO START or GRAB BOW\n",
-            new List<string> { "start" },
+            "You can GO BACK or GRAB BOW\n",
+            new List<string> { "start", "back" },
             new List<Item> { Item.bow });
         public static Room down = new Room("Once again, like the rooms before; covered in bodies. Oddly enough a glimmer of light appears out of nowhere.\n\n" +
-            $"Shinning brightly is a sword calling upon you , grab me , grab me" +
-            "You can GO START or GRAB SWORD\n",
-            new List<string> { "start" },
+            $"Shinning brightly is a sword calling upon you, grab me, GRAB ME\n" +
+            "You can GO BACK or GRAB SWORD\n",
+            new List<string> { "start", "back" },
             new List<Item> {Item.sword });
 
 
@@ -71,18 +71,6 @@ namespace LibraryHyrule
                 Exits = exits;
                 Items = items;
             }
-        }
-        public class  Name
-        {
-
-            public string Player { get; set; }
-            public Name() { }
-            public Name(string player)
-            {
-                Player = player;
-            }
-            
-            
         }
 
 

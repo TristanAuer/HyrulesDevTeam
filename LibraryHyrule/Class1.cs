@@ -14,6 +14,7 @@ namespace LibraryHyrule
         Dictionary<string, Room> Rooms = new Dictionary<string, Room>
         {
             {"start", start },
+            {"back", start },
             {"left", left },
             {"right", right },
             {"center", center },
@@ -28,23 +29,16 @@ namespace LibraryHyrule
 
         public void Run()
         {
-
             
-           
             Console.WriteLine("What is you're name?");
-
-            Name playerName = new Name();
-            string name = (string)playerName;
-            playerName = Console.ReadLine();
-
-
-            Console.WriteLine("You wake up in a cave, surprisingly bright; confused to everything you start to explore. One thing you are sure about is you're" +
-               "name,\n" +
-               $"{playerName}");
+            string playerName = Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("You wake up in a cave, surprisingly bright; confused to everything you start to explore. One thing you are sure about is you're" + " " +
+               $"name, {playerName}");
+            
             Room currentRoom = start;
-            Console.WriteLine("You can up to a fork and you options are LEFT, CENTER, or RIGHT");
-           
-
+            Console.WriteLine("You stand up to a fork and you three options are LEFT, CENTER, or RIGHT");
+            
         bool alive = true;
             while (alive)
             {
@@ -63,12 +57,22 @@ namespace LibraryHyrule
                         {
                             currentRoom = Rooms[exit];
                             foundExit = true;
-                            
+                            break;
+
                         }
+
                     }
-                    if (!foundExit)
+                    if(foundExit)
                     {
+                        
+                        Console.WriteLine("Going...");
+                        Console.ReadKey();
+                    }
+                    else
+                    {
+                        Console.Clear();
                         Console.WriteLine("Uh... Go where?");
+                        Console.ReadKey();
                     }
 
                 }
@@ -78,30 +82,36 @@ namespace LibraryHyrule
                     foreach (Item item in currentRoom.Items)
                     {   
 
-                        if (!foundItem && command.Contains(item.ToString()))
-                            {  
-
-                            Console.WriteLine($"you found a {item}." +" "+ "press any key to continue...");
+                        if (command.Contains(item.ToString()))
+                            {
+                            Console.Clear();
+                            Console.WriteLine($"You pick up the {item}." +" "+ "press any key to continue...");
                             
                             currentRoom.RemoveItem(item);
                             inventory.Add(item);
                             foundItem = true;
                             Console.ReadKey();
-                            
+                            break;
                             }
                     }
-                    if (!foundItem)
+                    if (foundItem)
                     {
-                        Console.WriteLine("I don't know what you're talking about.");
+                       
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("What was I grabbing?");
+                        Console.ReadKey();
                     }
                 }
-                else if (command.StartsWith("use ") || command.StartsWith("activate"))
+                else if (command.StartsWith("use ") || command.StartsWith("attack"))
                 {
-                    Console.WriteLine("I doubt you know how.");
+                    
                 }
                 else
                 {
-                    Console.WriteLine("*BUUUUUURP What?");
+                    Console.WriteLine("Huh?");
                 }
 
             }
