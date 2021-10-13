@@ -1,0 +1,6 @@
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\LibraryHyrule\obj\Debug\LibraryHyrule.csproj.AssemblyReference.cache
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\LibraryHyrule\obj\Debug\LibraryHyrule.csproj.CoreCompileInputs.cache
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\LibraryHyrule\bin\Debug\LibraryHyrule.dll
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\LibraryHyrule\bin\Debug\LibraryHyrule.pdb
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\LibraryHyrule\obj\Debug\LibraryHyrule.dll
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\LibraryHyrule\obj\Debug\LibraryHyrule.pdb

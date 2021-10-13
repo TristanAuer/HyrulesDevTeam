@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryHyrule;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,22 +14,24 @@ namespace HyrulesDEV
             //Zelda inspired text based adventure game
             //Introduction
             //Player name method
-                //takes player input and saves name
+            //takes player input and saves name
             //pick your weapon
-                //list player weapon options and saves input
+            //list player weapon options and saves input
             //Room method
-                //items
+            //items
             //Exit and enter method
             //skeleton in path must fight
-                //ask for name of skeleton
-                //Introduction
-                //bool statement to see if you can beat the skeleton
-                //true/false if the skeleton beat do not respawn.
+            //ask for name of skeleton
+            //Introduction
+            //bool statement to see if you can beat the skeleton
+            //true/false if the skeleton beat do not respawn.
             //inventory
-                //save function
+            //save function
             //finish
-                //if you have key you can leave
-           
+            //if you have key you can leave
+
+            Class1 game = new Class1();
+            game.Run();
         }
     }
 }

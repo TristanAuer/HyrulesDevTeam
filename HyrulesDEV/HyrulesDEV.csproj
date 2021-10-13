@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryHyrule\LibraryHyrule.csproj">
+      <Project>{43D064E5-A54F-4B23-85C7-AF89D5528BF1}</Project>
+      <Name>LibraryHyrule</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

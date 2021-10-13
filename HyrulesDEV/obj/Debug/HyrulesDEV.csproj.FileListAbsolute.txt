@@ -1,0 +1,10 @@
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\obj\Debug\HyrulesDEV.csproj.AssemblyReference.cache
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\obj\Debug\HyrulesDEV.csproj.CoreCompileInputs.cache
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\bin\Debug\HyrulesDEV.exe.config
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\bin\Debug\HyrulesDEV.exe
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\bin\Debug\HyrulesDEV.pdb
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\bin\Debug\LibraryHyrule.dll
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\bin\Debug\LibraryHyrule.pdb
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\obj\Debug\HyrulesDEV.csproj.CopyComplete
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\obj\Debug\HyrulesDEV.exe
+C:\Users\96276\OneDrive\Desktop\EFA\GoldBadge\Group Project\HyrulesDEV\obj\Debug\HyrulesDEV.pdb

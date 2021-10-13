@@ -21,25 +21,41 @@ namespace LibraryHyrule
             {"up", up },
             {"down", down },
         };
-        public List<Item> Inventory = new List<Item>();
+        List<Item> inventory = new List<Item>();
+
+      
+        
+
         public void Run()
         {
 
-            Console.WriteLine("What is you're name?");
-            string playerName = Console.ReadLine();
-            Console.WriteLine("You wake up in a cave, surprisingly bright; confused to everything you start to explore. One thing you are sure about is you're" +
-                "name,\n" +
-                $"{playerName}");
-            Console.ReadKey();
             
-            bool alive = true;
+           
+            Console.WriteLine("What is you're name?");
+
+            Name playerName = new Name();
+            string name = (string)playerName;
+            playerName = Console.ReadLine();
+
+
+            Console.WriteLine("You wake up in a cave, surprisingly bright; confused to everything you start to explore. One thing you are sure about is you're" +
+               "name,\n" +
+               $"{playerName}");
+            Room currentRoom = start;
+            Console.WriteLine("You can up to a fork and you options are LEFT, CENTER, or RIGHT");
+           
+
+        bool alive = true;
             while (alive)
             {
-                Room currentRoom = start;
-                string command = Console.ReadLine().ToLower();
+
                 Console.Clear();
+                Console.WriteLine(currentRoom.Splash);
+                string command = Console.ReadLine().ToLower();
+                
                 if (command.StartsWith("go ") || command.StartsWith("exit"))
                 {
+                    bool foundExit = false;
                     foreach (string exit in currentRoom.Exits)
                     {
                         if (command.Contains(exit) &&
@@ -47,7 +63,7 @@ namespace LibraryHyrule
                         {
                             currentRoom = Rooms[exit];
                             foundExit = true;
-                            break;
+                            
                         }
                     }
                     if (!foundExit)
@@ -65,7 +81,7 @@ namespace LibraryHyrule
                         if (!foundItem && command.Contains(item.ToString()))
                             {  
 
-                            Console.WriteLine($"you found a {item}." + "[ress any key to continue...");
+                            Console.WriteLine($"you found a {item}." +" "+ "press any key to continue...");
                             
                             currentRoom.RemoveItem(item);
                             inventory.Add(item);
@@ -74,7 +90,10 @@ namespace LibraryHyrule
                             
                             }
                     }
-                    Console.WriteLine("I don't know what you're talking about.");
+                    if (!foundItem)
+                    {
+                        Console.WriteLine("I don't know what you're talking about.");
+                    }
                 }
                 else if (command.StartsWith("use ") || command.StartsWith("activate"))
                 {
